@@ -1,0 +1,125 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Fobinacci_Uhr
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        List<decimal> Stundenwert = new List<decimal>();    
+        
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Hintergrund_St();
+            decimal Minutenteile;              // decimal, weil die Value hat ein Decimal Wert 
+            Stundenwert.Clear();            // wird geleert damit die letzte Werte nicht damit gerechnet, 
+            Stunden_rechnen(Stunden.Value);     // Stunden.Value ist Parameter und dadurchwird es mit Stundenzahl ersetzt (siehe die Funktion dazu)
+            Minutenteile = Minuten.Value / 5;   // wir machen /5 weil es ist in 5 Schritte und wir haben den großten Feld 5 
+            if (Minutenteile >= 5)          // z.B 30 Min
+            {
+                Minutenteile = Minutenteile - 5; // 30-5 = 25 (da wir immer mal 5 rechnen ist der Feld St5 betrofen)
+                if (Stundenwert.Contains(5))    // wird überbrüft ob es in der Liste ist oder nicht
+                {
+                    St5.BackColor = Color.Blue; // wenn ja dann hintergrund jetzt statt rot blau setzen.
+                }
+                else
+                {
+                    St5.BackColor = Color.Green; // sonst ist es noch weiß, deswegen wird grün  für Min gesetzt 
+                }
+            }
+            if (Minutenteile >= 3)
+            {
+                Minutenteile = Minutenteile - 3;
+                if (Stundenwert.Contains(3))
+                {
+                    St3.BackColor = Color.Blue;
+                }
+                else
+                {
+                    St3.BackColor = Color.Green;
+                }
+            }
+            if (Minutenteile >= 2)
+            {
+                Minutenteile = Minutenteile - 2;
+                if (Stundenwert.Contains(2))
+                {
+                    St2.BackColor = Color.Blue;
+                }
+                else
+                {
+                    St2.BackColor = Color.Green;
+                }
+            }
+            if (Minutenteile >= 1)
+            {
+                Minutenteile = Minutenteile - 1;
+                if (Stundenwert.Contains(1))
+                {
+                    St1.BackColor = Color.Blue;
+                }
+                else
+                {
+                    St1.BackColor = Color.Green;
+                }
+            }
+        }
+
+        private void Stunden_rechnen(decimal Stundenzahl)   // decimal, weil Value ist decimal Vareabel und Stundenzahl ist der Name von Vareabel
+        {
+            if (Stundenzahl == 12)          // da die Summe insgesamt 12 St ist und wenn die 1+2+3+5 = 11 dann haben wir nur 11 St, deswegen wird sepertat geschrieben
+            {
+                St12.BackColor = Color.Red;
+            }
+            if (Stundenzahl >= 5)
+            {
+                Stundenzahl = Stundenzahl - 5;  // st = 6, 6-1= 1 (also St5 + St1 geben die St 6 wieder aus.) St5 wird in HIntergrund rot und Stundenzahl ist jetzt 1
+                Stundenwert.Add(5);
+                St5.BackColor = Color.Red;
+            }
+            if (Stundenzahl >= 3)
+            {
+                Stundenzahl = Stundenzahl - 3;
+                Stundenwert.Add(3);
+                St3.BackColor = Color.Red;
+            }
+            if (Stundenzahl >= 2)
+            {
+                Stundenzahl = Stundenzahl - 2;
+                Stundenwert.Add(2);
+                St2.BackColor = Color.Red;
+            }
+            if (Stundenzahl >= 1)
+            {
+                Stundenzahl = Stundenzahl - 1; // wird weiter gerechnet und St1 wird auf rot gesetzt( also St1 und St5 sind rot und die werte werden in Liste gespeichert)
+                Stundenwert.Add(1);
+                St1.BackColor = Color.Red;
+            }
+        }
+        private void Hintergrund_St()
+        {
+            St1.BackColor = Color.White;
+            St2.BackColor = Color.White;
+            St3.BackColor = Color.White;
+            St5.BackColor = Color.White;
+            St12.BackColor = Color.White;
+        }
+
+
+    }
+
+       
+
+        
+}

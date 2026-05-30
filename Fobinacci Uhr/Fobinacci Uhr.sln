@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fobinacci Uhr", "Fobinacci Uhr\Fobinacci Uhr.csproj", "{107A4958-5167-429C-9CCD-54CE57223E16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{107A4958-5167-429C-9CCD-54CE57223E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107A4958-5167-429C-9CCD-54CE57223E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107A4958-5167-429C-9CCD-54CE57223E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107A4958-5167-429C-9CCD-54CE57223E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74DE9525-89F2-4605-B737-857EB12E8CE2}
+	EndGlobalSection
+EndGlobal

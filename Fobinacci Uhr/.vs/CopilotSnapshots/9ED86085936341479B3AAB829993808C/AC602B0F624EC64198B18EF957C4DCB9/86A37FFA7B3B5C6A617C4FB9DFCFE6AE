@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Fobinacci_Uhr
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // Werte der existierenden Blöcke (ohne den speziellen 12er-Block)
+        private readonly int[] blockWerte = new[] { 5, 3, 2, 1 };
+        private List<int> stundenWerte = new List<int>();
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Hintergrund_St();
+            stundenWerte.Clear();
+
+            int stunden = Decimal.ToInt32(Stunden.Value);
+            int minuten = Decimal.ToInt32(Minuten.Value);
+
+            Stunden_rechnen(stunden);
+
+            int minutenTeile = minuten / 5; // Minuten werden in 5-Minuten-Schritten dargestellt
+            foreach (var wert in blockWerte)
+            {
+                if (minutenTeile >= wert)
+                {
+                    minutenTeile -= wert;
+                    var ctrl = GetControlFürWert(wert);
+                    if (ctrl != null)
+                    {
+                        ctrl.BackColor = stundenWerte.Contains(wert) ? Color.Blue : Color.Green;
+                    }
+                }
+            }
+        }
+
+        private void Stunden_rechnen(int stundenzahl)
+        {
+            if (stundenzahl == 12)
+            {
+                // Spezialfall: 12 wird mit dem eigenen Block angezeigt
+                St12.BackColor = Color.Red;
+                stundenWerte.Add(12);
+                return;
+            }
+
+            foreach (var wert in blockWerte)
+            {
+                if (stundenzahl >= wert)
+                {
+                    stundenzahl -= wert;
+                    stundenWerte.Add(wert);
+                    SetBlockFarbe(wert, Color.Red);
+                }
+            }
+        }
+
+        private Control GetControlFürWert(int wert)
+        {
+            switch (wert)
+            {
+                case 5: return St5;
+                case 3: return St3;
+                case 2: return St2;
+                case 1: return St1;
+                default: return null;
+            }
+        }
+
+        private void SetBlockFarbe(int wert, Color farbe)
+        {
+            switch (wert)
+            {
+                case 1: St1.BackColor = farbe; break;
+                case 2: St2.BackColor = farbe; break;
+                case 3: St3.BackColor = farbe; break;
+                case 5: St5.BackColor = farbe; break;
+                case 12: St12.BackColor = farbe; break;
+            }
+        }
+
+        private void Hintergrund_St()
+        {
+            St1.BackColor = Color.White;
+            St2.BackColor = Color.White;
+            St3.BackColor = Color.White;
+            St5.BackColor = Color.White;
+            St12.BackColor = Color.White;
+        }
+
+
+    }
+
+       
+
+        
+}

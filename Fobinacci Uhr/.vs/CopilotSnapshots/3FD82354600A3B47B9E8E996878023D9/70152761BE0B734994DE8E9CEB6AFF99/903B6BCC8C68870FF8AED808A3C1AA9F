@@ -1,0 +1,290 @@
+﻿
+namespace Fobinacci_Uhr
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Erforderliche Designervariable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Verwendete Ressourcen bereinigen.
+        /// </summary>
+        /// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Vom Windows Form-Designer generierter Code
+
+        /// <summary>
+        /// Erforderliche Methode für die Designerunterstützung.
+        /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.St12 = new System.Windows.Forms.Button();
+            this.St2 = new System.Windows.Forms.Button();
+            this.St3 = new System.Windows.Forms.Button();
+            this.St1 = new System.Windows.Forms.Button();
+            this.St5 = new System.Windows.Forms.Button();
+            this.Stunden = new System.Windows.Forms.NumericUpDown();
+            this.Minuten = new System.Windows.Forms.NumericUpDown();
+            // Ensure the designer container is initialized before creating components that use it
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.St0000003 = new System.Windows.Forms.Button();
+            this.St0000000000005 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Stunden)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minuten)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // St12
+            // 
+            this.St12.BackColor = System.Drawing.Color.White;
+            this.St12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St12.Location = new System.Drawing.Point(127, 146);
+            this.St12.Margin = new System.Windows.Forms.Padding(4);
+            this.St12.Name = "St12";
+            this.St12.Size = new System.Drawing.Size(59, 57);
+            this.St12.TabIndex = 0;
+            this.St12.Text = "1";
+            this.St12.UseVisualStyleBackColor = false;
+            // 
+            // St2
+            // 
+            this.St2.BackColor = System.Drawing.Color.White;
+            this.St2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St2.Location = new System.Drawing.Point(18, 103);
+            this.St2.Margin = new System.Windows.Forms.Padding(4);
+            this.St2.Name = "St2";
+            this.St2.Size = new System.Drawing.Size(112, 100);
+            this.St2.TabIndex = 0;
+            this.St2.Text = "2";
+            this.St2.UseVisualStyleBackColor = false;
+            // 
+            // St3
+            // 
+            this.St3.BackColor = System.Drawing.Color.White;
+            this.St3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St3.Location = new System.Drawing.Point(18, 201);
+            this.St3.Margin = new System.Windows.Forms.Padding(4);
+            this.St3.Name = "St3";
+            this.St3.Size = new System.Drawing.Size(168, 132);
+            this.St3.TabIndex = 0;
+            this.St3.Text = "3";
+            this.St3.UseVisualStyleBackColor = false;
+            
+            // 
+            // St1
+            // 
+            this.St1.BackColor = System.Drawing.Color.White;
+            this.St1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St1.Location = new System.Drawing.Point(127, 103);
+            this.St1.Margin = new System.Windows.Forms.Padding(4);
+            this.St1.Name = "St1";
+            this.St1.Size = new System.Drawing.Size(59, 52);
+            this.St1.TabIndex = 0;
+            this.St1.Text = "1";
+            this.St1.UseVisualStyleBackColor = false;
+            // 
+            // St5
+            // 
+            this.St5.BackColor = System.Drawing.Color.White;
+            this.St5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St5.Location = new System.Drawing.Point(184, 103);
+            this.St5.Margin = new System.Windows.Forms.Padding(4);
+            this.St5.Name = "St5";
+            this.St5.Size = new System.Drawing.Size(281, 230);
+            this.St5.TabIndex = 0;
+            this.St5.Text = "5";
+            this.St5.UseVisualStyleBackColor = false;
+            // 
+            // Stunden
+            // 
+            this.Stunden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Stunden.Location = new System.Drawing.Point(101, 360);
+            this.Stunden.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.Stunden.Name = "Stunden";
+            this.Stunden.Size = new System.Drawing.Size(52, 26);
+            this.Stunden.TabIndex = 1;
+            this.Stunden.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // Minuten
+            // 
+            this.Minuten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minuten.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.Minuten.Location = new System.Drawing.Point(263, 359);
+            this.Minuten.Maximum = new decimal(new int[] {
+            55,
+            0,
+            0,
+            0});
+            this.Minuten.Name = "Minuten";
+            this.Minuten.Size = new System.Drawing.Size(52, 26);
+            this.Minuten.TabIndex = 1;
+            this.Minuten.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.Minuten.Visible = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+
+            // St0000003
+            // 
+            this.St0000003.BackColor = System.Drawing.Color.White;
+            this.St0000003.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St0000003.Location = new System.Drawing.Point(58, 198);
+            this.St0000003.Margin = new System.Windows.Forms.Padding(4);
+            this.St0000003.Name = "St0000003";
+            this.St0000003.Size = new System.Drawing.Size(168, 132);
+            this.St0000003.TabIndex = 0;
+            this.St0000003.Text = "3";
+            this.St0000003.UseVisualStyleBackColor = false;
+            
+            // 
+            // St0000000000005
+            // 
+            this.St0000000000005.BackColor = System.Drawing.Color.White;
+            this.St0000000000005.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St0000000000005.Location = new System.Drawing.Point(224, 100);
+            this.St0000000000005.Margin = new System.Windows.Forms.Padding(4);
+            this.St0000000000005.Name = "St0000000000005";
+            this.St0000000000005.Size = new System.Drawing.Size(281, 230);
+            this.St0000000000005.TabIndex = 0;
+            this.St0000000000005.Text = "5";
+            this.St0000000000005.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "*Minuten: (grün + blau) mal 5";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "*Stunden: rot + blau";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Fibonacci-Uhr:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 357);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 31);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Stunden:";
+            this.label4.Visible = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(180, 356);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 31);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Minuten:";
+            this.label5.Visible = true;
+
+            // lblLiveTime
+            // 
+            this.lblLiveTime = new System.Windows.Forms.Label();
+            this.lblLiveTime.AutoSize = true;
+            this.lblLiveTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLiveTime.Location = new System.Drawing.Point(370, 12);
+            this.lblLiveTime.Name = "lblLiveTime";
+            this.lblLiveTime.Size = new System.Drawing.Size(120, 29);
+            this.lblLiveTime.TabIndex = 4;
+            this.lblLiveTime.Text = "00:00:00";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(512, 434);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Minuten);
+            this.Controls.Add(this.Stunden);
+            this.Controls.Add(this.St3);
+            this.Controls.Add(this.St5);
+            this.Controls.Add(this.St2);
+            this.Controls.Add(this.St1);
+            this.Controls.Add(this.St12);
+            this.Controls.Add(this.lblLiveTime);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.Stunden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minuten)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Button St12;
+        private System.Windows.Forms.Button St0000003;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button St2;
+        private System.Windows.Forms.Button St1;
+        private System.Windows.Forms.Button St0000000000005;
+        private System.Windows.Forms.NumericUpDown Stunden;
+        private System.Windows.Forms.NumericUpDown Minuten;
+        private System.Windows.Forms.Button St3;
+        private System.Windows.Forms.Button St5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblLiveTime;
+    }
+}
+

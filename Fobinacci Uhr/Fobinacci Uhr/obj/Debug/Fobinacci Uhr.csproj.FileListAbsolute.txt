@@ -1,0 +1,20 @@
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.exe.config
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.exe
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.pdb
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.AssemblyReference.cache
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci_Uhr.Form1.resources
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci_Uhr.Properties.Resources.resources
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.GenerateResource.cache
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.CoreCompileInputs.cache
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.exe
+C:\Users\Siyamend\Desktop\C#-Programme\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.pdb
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.exe.config
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.exe
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\bin\Debug\Fobinacci Uhr.pdb
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.AssemblyReference.cache
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci_Uhr.Form1.resources
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci_Uhr.Properties.Resources.resources
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.GenerateResource.cache
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.csproj.CoreCompileInputs.cache
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.exe
+F:\develop\Fobinacci-clock\Fobinacci Uhr\Fobinacci Uhr\obj\Debug\Fobinacci Uhr.pdb
